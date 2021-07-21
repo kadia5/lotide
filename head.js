@@ -7,8 +7,8 @@ console.log(`Assertion Passed: ${actual} === ${expected}`);
       }
   
 };
-const head = function(){
-  let result = []
+const head = function(arr){
+  let result = arr[0]
   return result
 }
 console.log(assertEqual(head([5,6,7]), 5));
