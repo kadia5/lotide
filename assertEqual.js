@@ -1,21 +1,28 @@
-/* using .assert() method, good for bug catching
-console.assert(1 === 1); // => nothing happens because true
-console.assert(1 === 1.1); //=> prints out "Assertion failed" to the terminal*/
-
-
 // FUNCTION IMPLEMENTATION
-const sum = function(a, b) {
-  return a + b;
-};
-
-// TEST CODE
-console.assert(sum(1, 2) === 3);
-console.assert(sum(1, 20) === 3); // bad / incorrect assertion, and we see i
+const eqArrays = function(arg1, arg2) { 
+  if (arg1.length !== arg2.length ) {
+    return false
+  }
+  for(let i = 0; i < arg1.length; i++ ){
+    if (arg1[i] != arg2[i] ) {
+      return false
+    } 
+  }
+  return true;
+}
 
 const assertEqual = function(actual, expected) {
-  return actual , expected;
-};
+  if(actual === expected){
+console.log(`Assertion Passed: ${actual} === ${expected}`);
 
-// TEST CODE
-console.log(assertEqual("Lighthouse Labs", "Bootcamp"));
-console.log(assertEqual(1, 1));
+  }else{
+    console.log(`Assertion failed: ${actual} !== ${expected}`);
+      }
+  return true;
+};
+assertEqual(eqArrays([1, 2, 3], [1, 2, 3, 4]), false); // => should PASS
+eqArrays([1, 2, 3], [1, 2, 3]) // => true
+eqArrays([1, 2, 3], [3, 2, 1]) // => false
+
+eqArrays(["1", "2", "3"], ["1", "2", "3"]) // => true
+eqArrays(["1", "2", "3"], ["1", "2", 3]) // => false
