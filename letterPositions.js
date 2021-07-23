@@ -21,31 +21,33 @@ console.log(`Assertion Passed: ${actual} === ${expected}`);
   
 };
 const letterPositions = function(sentence) {
-  const results = {};
+  let arr1 = []
+  let arr2 =[]
+  let arr3 =[]
+  let arr4 =[]
+  let arr5 =[]
   console.log(sentence)
 
-  for (let i = 0; i < sentence; i++) {
-    console.log(item);
-  
-      if (results[item]) {
-       results[item].push(i)
-    } else {
-      results[item] = 1;
+  for (let value of sentence) {
+    if (value === "hello") {
+      return letterPositions.indexOf(a);
     
   }
+  arr1.push("hello")
+  arr2.push("hello")
+  arr3.push("hello")
+  arr4.push("hello")
+  arr5.push("hello")  
 }
-return results;
-
 }
-
-const result1 = letterPositions("lighthouse labs");
-console.log(result1)
-assertEqual(letterPositions("lighthouse labs").l,[0]);
+// const result1 = letterPositions("hello");
+// console.log(result1)
+console.log(assertEqual(letterPositions("hello").e,[1]));
 
 // assertEqual(result1["l"], 2);
 // assertEqual(result1["i"], 1);
 // assertEqual(result1["g"], 1);
 // assertEqual(result1["h"], 2);
-assertEqual(eqArrays([1, 2, 3], [1, 2, 3, 4]), true); // => should PASS
+// assertEqual(eqArrays([1, 2, 3], [1, 2, 3, 4]), true); // => should PASS
 
-console.log(result1)
+// console.log(letterPositions())
