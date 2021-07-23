@@ -17,9 +17,9 @@ const countLetters = function(letters) {
     console.log(item);
   
       if (results[item]) {
-       results[item] += 1;
+       results[item] += 0;
     } else {
-      results[item] = 1;
+      results[item] = 0;
     
   }
 }

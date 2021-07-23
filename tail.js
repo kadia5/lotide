@@ -16,6 +16,7 @@ const eqArrays = function(arg1, arg2) {
   for(let i = 0; i < arg1.length; i++ ){
     if (arg1[i] != arg2[i] ) {
       console.log(`Assertion failed: ${arg1} !== ${arg2}`);
+
       return false
     } 
   }

@@ -9,7 +9,7 @@ const eqArrays = function (arg1, arg2) {
     }
   }
   return true;
-}
+}n
 
 // const sum = function(a, b) {
 //   return a + b;

@@ -1,4 +1,13 @@
 // FUNCTION IMPLEMENTATION
+const assertEqual = function(actual, expected) {
+  if(actual === expected){
+console.log(`Assertion Passed: ${actual} === ${expected}`);
+
+  }else{
+    console.log([actual] !== [expected]);
+      }
+  
+};
 const eqArrays = function(arg1, arg2) { 
   if (arg1.length !== arg2.length ) {
     return false
@@ -11,15 +20,7 @@ const eqArrays = function(arg1, arg2) {
   return true;
 }
 
-const assertEqual = function(actual, expected) {
-  if(actual === expected){
-console.log(`Assertion Passed: ${actual} === ${expected}`);
 
-  }else{
-    console.log([actual] !== [expected]);
-      }
-  
-};
 assertEqual(eqArrays([1, 2, 3], [1, 2, 3, 4]), true); // => should PASS
 eqArrays([1, 2, 3], [1, 2, 3]) // => true
 eqArrays([1, 2, 3], [3, 2, 1]) // => false
